@@ -8,7 +8,16 @@
 > 3. 点击 **设置** → **运行时**
 > 4. 找到 **兼容性日期**，选择 `2026-01-20`，点击 **保存**
 > 5. 返回 **部署** → **创建部署** → 上传文件
-> 
+
+登录 Cloudflare 后台，进入你的 Pages 项目。
+点击 Settings (设置) -> Builds & deployments (构建和部署)。
+下拉找到 Build configurations (构建配置)，点击 Edit (编辑)。
+填写正确的 Build command (构建命令)（例如：npm run build）。
+填写正确的 Build output directory (构建输出目录)（例如：dist 或 build）。
+保存后，重新触发一次部署（Create deployment）。
+
+
+
 > **Worker 部署：**
 > 1. 登录 [Cloudflare 控制台](https://dash.cloudflare.com/)
 > 2. 进入 **Workers 和 Pages** → 选择你的 Worker
